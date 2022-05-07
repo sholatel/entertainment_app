@@ -1,0 +1,21 @@
+#collection-movie  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 16px;
+    padding: 0;
+    margin: 0;
+
+}
+
+h1.route-header {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.3125px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,154 @@
+
+ li.single-movie-container{
+    overflow: hidden;
+    list-style: none;
+    width: 45%;
+    height: 154px;
+    margin: 0px;
+    border-radius: 8px;  
+    padding:0px;   
+}
+
+li.single-movie-container  .movie-thumbnail {
+    width: 100% !important;
+    height: 60%  !important;
+    border-radius: 8px;
+    margin: 0px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+
+li.single-movie-container  .movie-thumbnail:hover {
+    opacity: 0.7;
+}
+
+
+li.single-movie-container  .bookmark-option-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    justify-self: flex-end; 
+    background: #10141E;
+    mix-blend-mode: normal;
+    opacity: 0.5; 
+    margin-right: 8px;  
+    margin-top: 8px;
+}
+
+
+
+li.single-movie-container  .play-movie-container {
+    background: rgba(255,255,255,0.25);
+    mix-blend-mode: normal;
+    border-radius: 28.5px;
+    width:100px;
+    height: 40px;
+    place-self: center;
+    display: none /* grid when hovered*/;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin: 0;
+    margin-bottom: 20%;
+}
+
+li.single-movie-container:hover .play-movie-container {
+    display: grid;
+}
+
+li.single-movie-container  .play-movie-container .play-btn {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    margin: 0px;
+}
+
+li.single-movie-container  .play-movie-container p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: #fff;
+    margin: 0px;
+}
+
+li.single-movie-container  .movie-details-container {
+    align-self: flex-end;
+}
+
+li.single-movie-container  .movie-details-container  .movie-meta-details {
+        display:  flex;
+        flex-direction: row;        
+        flex-wrap: nowrap;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        column-gap: 8px;
+        margin: 0px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 4px;
+}   
+
+
+
+li.single-movie-container  .movie-details-container  #category-icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+li.single-movie-container  .movie-details-container  #movie-title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    /* Pure White */
+    color: #FFFFFF;
+    margin:0px
+}
+
+
+/*mobile landscape and  */
+@media only screen and (min-width:480px) {
+    li.single-movie-container {
+        height: 192px;
+        width: 30%;     
+        
+    }   
+}
+
+@media only screen and (min-width:768px) {
+    li.single-movie-container  .movie-details-container  #movie-title {
+        font-size: 18px;
+        line-height: 23px;
+    }  
+    
+}
+
+/* desktop responsive design*/
+
+@media  only screen and (min-width:1100px)  {
+    li.single-movie-container {
+        height: 226px;
+        width: 18%;     
+        
+    } 
+}
+
+@media  only screen and (min-width:1260px)  {
+    li.single-movie-container {
+        height: 226px;
+        width: 24%;     
+        
+    } 
+}
+

@@ -1,0 +1,16 @@
+#tvSeries-container {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    row-gap: 24px;
+}
+
+@media only screen and (min-width:768px) {
+    #tvSeries-container h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+    }
+}

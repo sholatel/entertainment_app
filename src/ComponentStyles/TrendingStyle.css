@@ -1,0 +1,212 @@
+#trending-movie-container  {
+    min-width: 100% !important;
+    display: flex;
+    flex-flow: row;
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    scrollbar-color: #FC4747  #10141E;
+    scrollbar-width: none;
+    z-index: 10;
+    padding: 0;
+}
+
+#trending-movie-container  li{
+    overflow: hidden;
+    list-style: none;
+    height: 140px ;
+    min-width: 240px;
+    margin: 0px;
+    margin-right: 15px;
+    background-size: cover;
+    border-radius: 8px ;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 16px 8px 16px;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+#trending-movie-container li:hover {
+    opacity: 0.5;
+}
+
+#trending-movie-container .bookmark-option-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    justify-self: flex-end; 
+    background: #10141E;
+    mix-blend-mode: normal;
+    opacity: 0.5;   
+}
+
+
+#trending-movie-container .play-movie-container {
+    background: rgba(255,255,255,0.25);
+    mix-blend-mode: normal;
+    border-radius: 28.5px;
+    width:100px;
+    height: 40px;
+    place-self: center;
+    display: none /* grid when hovered*/;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin-bottom: 12px;
+}
+
+#trending-movie-container li:hover .play-movie-container {
+    display: grid;
+}
+
+#trending-movie-container .play-movie-container .play-btn {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    margin: 0px;
+}
+
+#trending-movie-container .play-movie-container p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: #fff;
+    margin: 0px;
+}
+
+#trending-movie-container .movie-details-container {
+    align-self: flex-end;
+}
+
+#trending-movie-container  .movie-details-container  .movie-meta-details {
+        display:  flex;
+        flex-direction: row;        
+        flex-wrap: nowrap;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        column-gap: 8px;
+        margin: 0px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 4px;
+}   
+
+
+
+#trending-movie-container  .movie-details-container  #category-icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+#trending-movie-container  .movie-details-container  #movie-title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    /* Pure White */
+    color: #FFFFFF;
+    margin:0px
+}
+
+
+/* tablet media  query design*/
+@media only screen and (min-width:768px) {
+    #trending-movie-container  li{
+        height: 230px;
+        min-width: 470px !important;
+        margin-right: 40px;
+        padding: 16px 24px 16px;
+    }
+    
+    #trending-movie-container  .play-movie-container {
+        width:112px;
+        height: 43px;
+        grid-column-gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    #trending-movie-container  .play-movie-container .play-btn {
+        width: 32px;
+        height: 32px;
+        margin: 0px;
+    }
+    
+    #trending-movie-container  .play-movie-container p {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23px;
+        color: #fff;
+        margin: 0px;
+    }
+    
+    #trending-movie-container  .movie-details-container  .movie-meta-details {
+            column-gap: 8px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 19px;
+            margin-bottom: 4px;
+    }   
+    
+    
+    #trending-movie-container  .movie-details-container  #movie-title {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin:0px
+    }   
+}
+
+
+/*desktop media query*/
+
+@media only screen and (min-width:1200px) {    
+    #trending-movie-container  .play-movie-container {
+        width:117px;
+        height: 48px;
+    }
+    
+    #trending-movie-container  .play-movie-container p {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #fff;
+        margin: 0px;
+    }
+
+    #trending-movie-container  .movie-details-container  .movie-meta-details {
+            column-gap: 8px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 19px;
+            margin-bottom: 4px;
+    }   
+    
+    
+    #trending-movie-container  .movie-details-container  #movie-title {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin:0px
+    }   
+}
+
+
